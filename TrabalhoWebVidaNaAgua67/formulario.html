@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cadastro</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="ods.html">ODS</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
+            <li><a href="informacoes.html">Quem somos</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Participe do Projeto</h2>
+    <p>O EcoBot marinho é um projeto que busca soluções para reduzir a poluição em cursos d'água. Compartilhe sua ideia e ajude a desenvolver novas tecnologias sustentáveis.</p>
+</section>
+
+<section>
+    <h2>Formulário de Participação</h2>
+
+<form id="formulario">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+    </fieldset>
+
+    <fieldset>
+        <legend>Sobre o Projeto</legend>
+
+            <label for="local">Local onde a ideia será aplicada:</label>
+            <select name="local" id="local">
+                <option value="">Selecione um local</option>
+                <option value="rio">Rio</option>
+                <option value="lago">Lago</option>
+                <option value="mar">Mar</option>
+                <option value="oceano">Oceano</option>
+                <option value="ooutro">Outro</option>
+            </select>
+
+            <label for="residuo">Principal tipo de resíduo observado:</label>
+            <select name="residuo" id="residuo">
+                <option value="">Selecione um tipo de resíduo</option>
+                <option value="plastico">Plástico</option>
+                <option value="metal">Metal</option>
+                <option value="vidro">Vidro</option>
+                <option value="papel">Papel</option>
+                <option value="organico">Material Orgânico</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="descricao">Descreva sua ideia para melhorar o EcoBot Marinho:</label>
+            <textarea name="descricao" id="descricao" placeholder="Digite sua ideia"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Impacto Esperado</legend>
+
+        <label for="baixo">Baixo</label>
+        <input type="radio" id="baixo" name="impacto" value="baixo"><br>
+
+        <label for="medio">Médio</label>
+        <input type="radio" id="medio" name="impacto" value="medio"><br>
+
+        <label for="alto">Alto</label>
+        <input type="radio" id="alto" name="impacto" value="alto">
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar formulário</button>
+</form>
+</section>
+</main>
+
+    <footer>
+        <p>Projeto acadêmico - ODS 14 | Vida debaixo d'água</p>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
